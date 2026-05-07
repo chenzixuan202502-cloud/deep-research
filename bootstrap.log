@@ -1,0 +1,29 @@
+nohup: 忽略输入
+Starting DeerFlow in [DEVELOPMENT] mode...
+
+2026-01-09 09:46:33,465 - __main__ - INFO - Starting DeerFlow API server on 0.0.0.0:8088
+2026-01-09 09:46:33,465 - __main__ - INFO - Log level: INFO
+INFO:     Will watch for changes in these directories: ['/home/zhanghaipeng/deer-flow_pre/deer-flow']
+ERROR:    [Errno 98] Address already in use
+
+> deer-flow-web@0.1.0 dev /home/zhanghaipeng/deer-flow_pre/deer-flow/web
+> dotenv -f ../.env -- next dev --turbo
+
+   ▲ Next.js 15.4.8 (Turbopack)
+   - Local:        http://localhost:3033
+   - Network:      http://172.16.16.199:3033
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 246ms
+ ✓ Ready in 1677ms
+ ○ Compiling /chat ...
+ ✓ Compiled /chat in 9.5s
+ GET /chat 200 in 10652ms
+ ⚠ Cross origin request detected from 39.98.109.195 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ○ Compiling / ...
+ ✓ Compiled / in 1717ms
+ GET / 200 in 2398ms
+ ⚠ Cross origin request detected from 172.16.16.199 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins

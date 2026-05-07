@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  deer-flow:
+    # 构建当前目录
+    build: .
+    container_name: deer-flow-server
+    
+    # === 🌟 老师要求的核心功能 🌟 ===
+    # always: 无论服务器重启，还是程序崩溃，Docker 都会自动重启它
+    restart: always
+    
+    # 端口映射
+    ports:
+      - "8088:8088"
+      - "3033:3033"
+    
+    # 挂载日志 (方便在宿主机查看)
+    volumes:
+      - ./logs:/app/logs
+      # 开发时开启下面这行，修改代码无需重建镜像
+      - .:/app
+    
+    # 环境变量
+    env_file:
+      - .env
+      
+    # 解决 Linux 下容器访问宿主机服务 (如宿主机上的 ES)
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

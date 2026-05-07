@@ -1,0 +1,91 @@
+Starting DeerFlow in [PRODUCTION] mode...
+
+2026-01-09 09:36:48,608 - __main__ - INFO - Starting DeerFlow API server on 0.0.0.0:8000
+2026-01-09 09:36:48,608 - __main__ - INFO - Log level: INFO
+
+> deer-flow-web@0.1.0 start /home/zhanghaipeng/deer-flow_pre/deer-flow/web
+> next start
+
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at <unknown> (Error: listen EADDRINUSE: address already in use :::3000)
+    at new Promise (<anonymous>) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+ ELIFECYCLE  Command failed with exit code 1.
+2026-01-09 09:36:53,624 - src.graph.checkpoint - WARNING - Checkpoint saver is disabled
+2026-01-09 09:36:53,667 - src.server.app - INFO - Allowed origins: ['http://localhost:3033', 'http://localhost:8088', 'http://39.98.109.195:58032', 'http://172.16.16.199:3033']
+INFO:     Started server process [2482139]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+Starting DeerFlow in [DEVELOPMENT] mode...
+
+2026-01-09 09:37:54,683 - __main__ - INFO - Starting DeerFlow API server on 0.0.0.0:8088
+2026-01-09 09:37:54,683 - __main__ - INFO - Log level: INFO
+INFO:     Will watch for changes in these directories: ['/home/zhanghaipeng/deer-flow_pre/deer-flow']
+INFO:     Uvicorn running on http://0.0.0.0:8088 (Press CTRL+C to quit)
+INFO:     Started reloader process [2484056] using StatReload
+
+> deer-flow-web@0.1.0 dev /home/zhanghaipeng/deer-flow_pre/deer-flow/web
+> dotenv -f ../.env -- next dev --turbo
+
+   ▲ Next.js 15.4.8 (Turbopack)
+   - Local:        http://localhost:3033
+   - Network:      http://172.16.16.199:3033
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 267ms
+ ✓ Ready in 1822ms
+2026-01-09 09:38:00,059 - src.graph.checkpoint - WARNING - Checkpoint saver is disabled
+2026-01-09 09:38:00,098 - src.server.app - INFO - Allowed origins: ['http://localhost:3033', 'http://localhost:8088', 'http://39.98.109.195:58032', 'http://172.16.16.199:3033']
+INFO:     Started server process [2484058]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ ○ Compiling /chat ...
+ ✓ Compiled /chat in 9.9s
+ GET /chat 200 in 10829ms
+ ⚠ Cross origin request detected from 39.98.109.195 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+INFO:     127.0.0.1:46910 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46924 - "GET /api/config HTTP/1.1" 200 OK
+ GET /chat 200 in 206ms
+INFO:     127.0.0.1:34046 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34060 - "GET /api/config HTTP/1.1" 200 OK
+Starting DeerFlow in [DEVELOPMENT] mode...
+
+2026-01-09 09:41:25,900 - __main__ - INFO - Starting DeerFlow API server on 0.0.0.0:8088
+2026-01-09 09:41:25,900 - __main__ - INFO - Log level: INFO
+INFO:     Will watch for changes in these directories: ['/home/zhanghaipeng/deer-flow_pre/deer-flow']
+ERROR:    [Errno 98] Address already in use
+
+> deer-flow-web@0.1.0 dev /home/zhanghaipeng/deer-flow_pre/deer-flow/web
+> dotenv -f ../.env -- next dev --turbo
+
+   ▲ Next.js 15.4.8 (Turbopack)
+   - Local:        http://localhost:3033
+   - Network:      http://172.16.16.199:3033
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Compiled middleware in 228ms
+ ✓ Ready in 1628ms
+ ○ Compiling /chat ...
+ ✓ Compiled /chat in 9.4s
+ GET /chat 200 in 10384ms
+ ⚠ Cross origin request detected from 39.98.109.195 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+INFO:     127.0.0.1:35964 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35966 - "GET /api/config HTTP/1.1" 200 OK
+ GET /chat 200 in 207ms
+INFO:     127.0.0.1:49764 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49772 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32910 - "GET /api/config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:32912 - "GET /api/config HTTP/1.1" 200 OK
